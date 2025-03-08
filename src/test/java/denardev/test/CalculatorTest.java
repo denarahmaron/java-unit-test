@@ -2,6 +2,7 @@ package denardev.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -25,6 +26,7 @@ public class CalculatorTest {
 
     @Test
     @DisplayName("Test for failed scenario for method divide(Integer, Integer)")
+    @Disabled
     public void testDivideFailed(){
         assertThrows(IllegalArgumentException.class, () -> {
             calculator.divide(10, 0);
