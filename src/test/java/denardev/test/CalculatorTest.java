@@ -3,6 +3,7 @@ package denardev.test;
 import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.*;
+import org.opentest4j.TestAbortedException;
 
 @DisplayName("Test for calculator class")
 public class CalculatorTest {
@@ -50,4 +51,15 @@ public class CalculatorTest {
             calculator.divide(10, 0);
         });
     }
+
+    @Test
+    public void testAborted(){
+        var profile = System.getenv("PROFILE");
+        if(!"DEV".equals(profile)){
+            throw new TestAbortedException();
+        }else {
+            // unit test untuk DEV
+        }
+    }
+
 }
