@@ -1,6 +1,7 @@
 package denardev.test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.*;
 
 import org.junit.jupiter.api.*;
 import org.opentest4j.TestAbortedException;
@@ -60,6 +61,13 @@ public class CalculatorTest {
         }else {
             // unit test untuk DEV
         }
+    }
+
+    @Test
+    public void testAssumption(){
+        assumeTrue("DEV".equals(System.getenv("PROFILE")));
+
+        // unit test untuk DEV
     }
 
 }
