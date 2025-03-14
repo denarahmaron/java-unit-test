@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: denardev.test.CalculatorTest
+Test set: denardev.test.ConditionsTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.103 s -- in denardev.test.CalculatorTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 0.110 s -- in denardev.test.ConditionsTest
